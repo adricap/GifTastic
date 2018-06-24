@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifTastic!!!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class = "container">
+        <header>
+            <div class = "jumbotron">
+                <h1 style= "text-align: center">SEARCH SUPER HEROES</h1>
+            </div>
+        </header>
+        <div class = "row">
+            <div id="buttons-view"></div>
+        </div>
+        <br><br>
+        <div class = "row">
+            <form id="hero-form">
+                <input type="text" id="hero-input">            
+                <!-- Button triggers new movie to be added -->
+                <input id="add-hero" type="submit" value="Add Ur SUPERHEROS">
+            </form>
+        </div>    
+        <br><br>
+        <div class ="row">
+            <div class = "col-lg-12">
+                <div id="heroesView"></div> 
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="game.js"></script>
+</body>
+</html>
