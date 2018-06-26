@@ -25,14 +25,15 @@ h4 {
 
 }
 
-h5 {
+h5, #add-hero {
     font-family: 'Marvel', sans-serif;  
 
 }
 
-button {
+button, p {
     font-family: 'Alegreya Sans SC', sans-serif;
     margin: 3px;
 
 }
+
 
