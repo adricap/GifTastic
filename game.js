@@ -4,7 +4,9 @@ function displayHeroes() {
    var hero = $(this).attr("data-name");
    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + hero + "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg";
 
-   $.ajax({url:queryURL, method:'GET'}).done(function(response){
+   $.ajax({url:queryURL, 
+    method:'GET'})
+    .done(function(response){
        console.log(response);
        $("#heroesView").empty();
    
@@ -25,10 +27,10 @@ function displayHeroes() {
 
            $("#heroesView").prepend(image,p);
            checkState();
-           console.log();
-       }
-   });
+        }
+    });
 }
+
 function renderButtons() {
    $("#buttons-view").empty();
    for (var i = 0; i < heroes.length; i++) {
@@ -41,13 +43,11 @@ function renderButtons() {
 }
 
 $("#add-hero").on("click", function() {
-   event.preventDefault();
-   var newHero = $("#hero-input").val().trim();
-   heroes.push(newHero);
-   renderButtons();
+    event.preventDefault();
+    var newHero = $("#hero-input").val().trim();
+    heroes.push(newHero);
+    renderButtons();
     return false;
-  // console.log();
-
 })
 
 $(document).on("click", ".newHero", displayHeroes);
